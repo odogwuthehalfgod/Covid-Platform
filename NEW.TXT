@@ -1,0 +1,6 @@
+<td class='.$resultc.'>'.$resultc.' '.'(CT VALUE - '.$ct.')'.'</td>
+
+
+<td class='.$resultc.'>
+          '.($resultc=="POSITIVE") ? $resultc.' '.'(CT VALUE - '.$ct.')' : $resultc;'
+</td>

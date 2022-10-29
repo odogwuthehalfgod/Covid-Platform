@@ -1,0 +1,9 @@
+{
+  "require": {
+    "ext-gd": "*",
+    "php": "^7.3 || ^8.0",
+    "phpoffice/phpspreadsheet": "^1.21",
+    "mpdf/mpdf": "^8.0",
+    "a1comms/php-gds": "^4.2"
+  }
+}

@@ -1,0 +1,160 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta http-equiv="X-UA-Compatible" content="IE=edge" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Document</title>
+  </head>
+  <body>
+    <div class="result-head">
+      <div class="logo-header">
+        <span class="logo">
+          <img src="" alt="" />
+        </span>
+        <h1>MOLECULAR LABORATORY</h1>
+        <h3>
+          PLOT NO. 1021, B5 SHEHU YAR'ADUA WAY, OPPOSITE FEDERAL MINISTRY OF
+          WORKS, UTAKO DISTRICT, ABUJA
+        </h3>
+        <h3>REPORT FORM</h3>
+      </div>
+
+      <div class="result-main">
+        <div class="result-body surname">
+          <h3>SURNAME</h3>
+          <h2></h2>
+        </div>
+        <div class="result-body first-name">
+          <h3>FIRST NAME</h3>
+          <h2></h2>
+        </div>
+        <div class="result-body age">
+          <h3>AGE</h3>
+          <h2></h2>
+        </div>
+        <div class="result-body sex">
+          <h3>SEX</h3>
+          <h2></h2>
+        </div>
+        <div class="result-body lab-no">
+          <h3>LAB NO:</h3>
+          <h2></h2>
+        </div>
+        <div class="result-body address">
+          <h3>ADDRESS</h3>
+          <h2></h2>
+        </div>
+        <div class="result-body lga">
+          <h3>LGA:</h3>
+          <h2></h2>
+        </div>
+        <div class="result-body state">
+          <h3>STATE</h3>
+          <h2></h2>
+        </div>
+        <div class="result-body epid-no">
+          <h3>EPID NO:</h3>
+          <h2></h2>
+        </div>
+        <div class="result-body specimen-type">
+          <h3>SPECIMEN TYPE</h3>
+          <h2></h2>
+        </div>
+        <div class="result-body date-received">
+          <h3>DATE RECEIVED</h3>
+          <h2></h2>
+        </div>
+        <div class="result-body date-tested">
+          <h3>DATE ISSUED</h3>
+          <h2></h2>
+        </div>
+        <div class="result-body test-requested">
+          <h3>TEST REQUESTED</h3>
+          <h2></h2>
+        </div>
+      </div>
+    </div>
+
+    <button class="me">Click</button>
+    <style>
+      .result-main {
+        display: grid;
+        /* grid-template-columns: repeat(5, 1fr); */
+        grid-template-columns: repeat(13, 1fr);
+      }
+
+      .result-body {
+        border: 1px solid black;
+      }
+
+      .surname,
+      .address,
+      .specimen-type {
+        grid-column: 1/4;
+      }
+
+      .first-name {
+        grid-column: 4/7;
+      }
+
+      .lab-no {
+        grid-column: 9/-1;
+      }
+
+      .lga,
+      .date-received {
+        grid-column: 4/6;
+      }
+
+      .state,
+      .date-tested {
+        grid-column: 6/9;
+      }
+
+      .epid-no,
+      .test-requested {
+        grid-column: 9/-1;
+      }
+
+      .result-body h3 {
+        font-family: "product sans black";
+        margin-top: 0;
+        font-size: 15px;
+        text-align: center;
+      }
+    </style>
+  </body>
+
+  <script>
+    console.log("working");
+
+    let approvers = [
+      {
+        id: 1,
+        name: "hr",
+      },
+      {
+        id: 2,
+        name: "doca",
+      },
+      {
+        id: 3,
+        name: "cmd",
+      },
+    ];
+
+    var clicky = document.querySelector(".me");
+    let no = 0;
+
+    clicky.addEventListener("click", function () {
+      if (no == approvers.length) {
+        return;
+        console.log("stop at this point");
+      } else {
+        console.log(`${approvers[no].id}:${approvers[no].name}`);
+        no++;
+      }
+    });
+  </script>
+</html>

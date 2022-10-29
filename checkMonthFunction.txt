@@ -1,0 +1,55 @@
+function checkmonth($month){
+    if($month == 'Jan')
+    {
+    $val = 1;
+    }else
+    if($month == 'Feb')
+    {
+    $val = 2;
+    
+    }else
+    if($month == 'Mar')
+    {
+    $val = 3;
+    
+    }else
+    if($month == 'Apr')
+    {
+    $val = 4;
+    
+    }else
+    if($month == 'May')
+    {
+    $val = 5;
+    
+    }else
+    if($month == 'Jun')
+    {
+    $val = 6;
+    }else
+    if($month == 'Jul')
+    {
+    $val = 7;
+    }else
+    if($month == 'Aug')
+    {
+    $val = 8;
+    }else
+    if($month == 'Sep')
+    {
+    $val = 9;
+    }else
+    if($month == 'Oct')
+    {
+    $val = 10;
+    }else
+    if($month == 'Nov')
+    {
+    $val = 11;
+    }else
+    if($month == 'Dec')
+    {
+    $val = 12;
+    }
+    return $val;
+}
